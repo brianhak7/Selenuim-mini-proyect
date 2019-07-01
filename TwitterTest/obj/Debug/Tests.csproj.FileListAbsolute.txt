@@ -1,0 +1,19 @@
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\TwitterTest.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\TwitterTest.pdb
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\Tests Framework.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\WebDriver.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\Tests Framework.pdb
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\WebDriver.xml
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\obj\Debug\TwitterTest.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\obj\Debug\TwitterTest.pdb
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\geckodriver.exe
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\WebDriver.Support.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\WebDriver.Support.xml

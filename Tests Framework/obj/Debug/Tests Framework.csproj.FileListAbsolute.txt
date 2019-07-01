@@ -1,0 +1,13 @@
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\bin\Debug\Tests Framework.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\bin\Debug\Tests Framework.pdb
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\bin\Debug\nunit.framework.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\bin\Debug\WebDriver.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\bin\Debug\WebDriver.Support.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\bin\Debug\nunit.framework.pdb
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\bin\Debug\nunit.framework.xml
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\bin\Debug\WebDriver.xml
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\bin\Debug\WebDriver.Support.xml
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\obj\Debug\Tests Framework.csprojResolveAssemblyReference.cache
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\obj\Debug\Tests Framework.dll
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\obj\Debug\Tests Framework.pdb
+c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\bin\Debug\geckodriver.exe
