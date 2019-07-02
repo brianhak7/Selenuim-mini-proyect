@@ -27,18 +27,36 @@ namespace Tests_Framework
 
         public void Login()
         {
-
             var loginInput = Driver.Instance.FindElement(By.ClassName("js-username-field"));
             loginInput.SendKeys(userName);
 
             var passwordInput = Driver.Instance.FindElement(By.ClassName("js-password-field"));
             passwordInput.SendKeys(password);
 
-            var loginButton = Driver.Instance.FindElement(By.ClassName("submit"));
+            var loginButton = Driver.Instance.FindElement(By.TagName("button"));
             loginButton.Click();
 
+          //  var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(2));
 
+
+            var Tweet = Driver.Instance.FindElement(By.Id("tweet-box-home-timeline"));
+            Tweet.SendKeys("posjgt");
+
+            var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(2));
+
+            var twbutton = Driver.Instance.FindElement(By.ClassName("tweet-action"));
+            twbutton.Click();
+            var twdelete = Driver.Instance.FindElement(By.ClassName("ProfileTweet-actionButton"));
+            twdelete.Click();
+            var twdelete1 = Driver.Instance.FindElement(By.TagName("Delete Tweet"));
+            twdelete1.Click();
+
+            var twdelete2 = Driver.Instance.FindElement(By.TagName("Delete"));
+            twdelete1.Click();
+
+            
+            // loginInput.SendKeys(userName);
         }
-
+       
     }
 }

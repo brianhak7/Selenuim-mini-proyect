@@ -7,6 +7,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Opera;
 using System.Threading;
+using OpenQA.Selenium.Chrome;
 
 namespace Tests_Framework
 {
@@ -28,7 +29,7 @@ namespace Tests_Framework
         public static void Initialize()
         {
 
-            Instance = new FirefoxDriver();
+            Instance = new ChromeDriver();
             TurnOnWait();
 
         }

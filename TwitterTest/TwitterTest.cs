@@ -10,13 +10,14 @@ namespace TwitterTest
         [TestInitialize]
         public void Init()
         {
-          //  Driver.Initialize();
+          Driver.Initialize();
 
         }
         [TestMethod]
         public void TestMethod1()
         {
-            LoginPage.GoTo();
+            LoginPage loginPage = new LoginPage();
+            loginPage.GoTo();
             LoginPage.LoginAs(Password.UserName).WithPassword(Password.Passw0rd).Login();
         }
     }

@@ -14,6 +14,5 @@ c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTes
 c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\obj\Debug\Tests.csprojResolveAssemblyReference.cache
 c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\obj\Debug\TwitterTest.dll
 c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\obj\Debug\TwitterTest.pdb
-c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\geckodriver.exe
 c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\WebDriver.Support.dll
 c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\TwitterTest\bin\Debug\WebDriver.Support.xml
