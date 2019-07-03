@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Driver.cs" />
+    <Compile Include="Logincheck.cs" />
     <Compile Include="LoginCommand.cs" />
     <Compile Include="LoginPage.cs" />
     <Compile Include="Password.cs" />

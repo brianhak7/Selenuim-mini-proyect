@@ -12,6 +12,8 @@ namespace Tests_Framework
 {
     public class LoginCommand
     {
+        public static readonly Random getrandom = new Random();
+        int num = getrandom.Next(0, 5000);
         private string password;
         private readonly string userName;
 
@@ -25,38 +27,69 @@ namespace Tests_Framework
             return this;
         }
 
-        public void Login()
+        public void Login(string user,string pass, string button, string site)
         {
-            var loginInput = Driver.Instance.FindElement(By.ClassName("js-username-field"));
-            loginInput.SendKeys(userName);
+            if (site == "fb")
+            {
+                var loginInput = Driver.Instance.FindElement(By.Id(user));
+                loginInput.SendKeys(userName);
 
-            var passwordInput = Driver.Instance.FindElement(By.ClassName("js-password-field"));
-            passwordInput.SendKeys(password);
+                var passwordInput = Driver.Instance.FindElement(By.Id(pass));
+                passwordInput.SendKeys(password);
 
-            var loginButton = Driver.Instance.FindElement(By.TagName("button"));
-            loginButton.Click();
+                var loginButton = Driver.Instance.FindElement(By.Id(button));
+                loginButton.Click();
+            }
+            else {
+                var loginInput = Driver.Instance.FindElement(By.ClassName(user));
+                loginInput.SendKeys(userName);
 
-          //  var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(2));
+                var passwordInput = Driver.Instance.FindElement(By.ClassName(pass));
+                passwordInput.SendKeys(password);
+
+                var loginButton = Driver.Instance.FindElement(By.TagName(button));
+                loginButton.Click();
+                var twdelete = Driver.Instance.FindElement(By.ClassName("_2s25"));
+                twdelete.Click();
+                //_2s25
+                var Tweet = Driver.Instance.FindElement(By.ClassName("_1mf"));
+                Tweet.SendKeys("Post " + num);
+                //_1mf
+            }
+            /*
+                      //  var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(2));
 
 
-            var Tweet = Driver.Instance.FindElement(By.Id("tweet-box-home-timeline"));
-            Tweet.SendKeys("posjgt");
+                        var Tweet = Driver.Instance.FindElement(By.Id("tweet-box-home-timeline"));
+                        Tweet.SendKeys("Post " + num);
 
-            var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(2));
+                        var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(2));
 
-            var twbutton = Driver.Instance.FindElement(By.ClassName("tweet-action"));
-            twbutton.Click();
-            var twdelete = Driver.Instance.FindElement(By.ClassName("ProfileTweet-actionButton"));
-            twdelete.Click();
-            var twdelete1 = Driver.Instance.FindElement(By.TagName("Delete Tweet"));
-            twdelete1.Click();
+                        var twbutton = Driver.Instance.FindElement(By.ClassName("tweet-action"));
+                        twbutton.Click();
+                        var wait2 = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(5));
+                        // wait2.p
+                        TimeSpan.FromSeconds(5);
+                        var twdelete = Driver.Instance.FindElement(By.ClassName("ProfileCardStats-statValue"));
+                        twdelete.Click();
+                        TimeSpan.FromSeconds(5);
 
-            var twdelete2 = Driver.Instance.FindElement(By.TagName("Delete"));
-            twdelete1.Click();
+                        //  var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(5));
+                        //  wait.Until(d => d.SwitchTo().ActiveElement().GetAttribute("class") == "ProfileHeading-toggleLink");
 
-            
-            // loginInput.SendKeys(userName);
+
+                        //twdelete1.Click();
+
+                        var wait1 = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(5));
+                        // var twdelete1 = Driver.Instance.FindElement(By.XPath("//div[2]/div[4]/button[2]"));
+                        // twdelete1.Click();
+                        //xpath=//div[2]/div[4]/button[2]
+                        //   var twdelete2 = Driver.Instance.FindElement(By.TagName("Delete"));
+                        //  twdelete1.Click();
+
+                        //ProfileHeading-toggleLink
+                        // loginInput.SendKeys(userName); */
         }
-       
+
     }
 }

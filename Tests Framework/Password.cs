@@ -26,7 +26,23 @@ namespace Tests_Framework
 
 
         }
+        public static string UserNamefb
+        {
 
 
+            get { return "PilaCola"; }
+
+
+
+        }
+        public static string Passw0rdfb
+        {
+
+
+            get { return "xxxx6666"; }
+
+
+
+        }
     }
 }
