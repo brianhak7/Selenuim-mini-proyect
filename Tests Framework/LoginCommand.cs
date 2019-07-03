@@ -39,6 +39,17 @@ namespace Tests_Framework
 
                 var loginButton = Driver.Instance.FindElement(By.Id(button));
                 loginButton.Click();
+                //var twdelete = Driver.Instance.FindElement(By.ClassName("_1vp5"));
+                //twdelete.Click();
+                //_2s25
+                var Tweet = Driver.Instance.FindElement(By.ClassName("_3ixn"));
+                Tweet.Click();
+
+              //  var Tweet1 = Driver.Instance.FindElement(By.ClassName("_2s25"));
+               // Tweet1.Click();
+                //_2s25 
+              //  Tweet.Click();
+                //_1mf
             }
             else {
                 var loginInput = Driver.Instance.FindElement(By.ClassName(user));
@@ -49,10 +60,10 @@ namespace Tests_Framework
 
                 var loginButton = Driver.Instance.FindElement(By.TagName(button));
                 loginButton.Click();
-                var twdelete = Driver.Instance.FindElement(By.ClassName("_2s25"));
+                var twdelete = Driver.Instance.FindElement(By.ClassName("_1vp5"));
                 twdelete.Click();
                 //_2s25
-                var Tweet = Driver.Instance.FindElement(By.ClassName("_1mf"));
+                var Tweet = Driver.Instance.FindElement(By.ClassName("_2md"));
                 Tweet.SendKeys("Post " + num);
                 //_1mf
             }

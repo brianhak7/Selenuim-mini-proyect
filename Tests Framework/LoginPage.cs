@@ -22,9 +22,9 @@ namespace Tests_Framework
             /// IWebDriver webDriver = new ChromeDriver();
             // webDriver.Navigate().GoToUrl("http://twitter.com/login");
            // Instance.Manage().Timeouts().ImplicitWait.Add(TimeSpan.FromSeconds(5));
-           var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(5));
+          // var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(5));
            
-            wait.Until(d => d.SwitchTo().ActiveElement().GetAttribute("class") == Class);
+         //   wait.Until(d => d.SwitchTo().ActiveElement().GetAttribute("class") == Class);
 
         }
         // js-username-field email-input js-initial-focus
