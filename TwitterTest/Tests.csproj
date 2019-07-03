@@ -55,8 +55,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="loginfb.cs" />
     <Compile Include="TwitterTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Loginerror.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
