@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tests_Framework
 {
-   public class Password
+   public class Usernamepasstw
     {
         public static string UserName
         {

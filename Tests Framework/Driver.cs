@@ -46,16 +46,13 @@ namespace Tests_Framework
 
         public static void NoWait(Action action)
         {
-            TurnOffWait();
+            
             action();
             TurnOnWait();
 
         }
 
-        private static void TurnOffWait()
-        {
-            Instance.Manage().Timeouts().ImplicitWait.Add(TimeSpan.FromSeconds(0));
-        }
+        
 
         private static void TurnOnWait()
         {
