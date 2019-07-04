@@ -18,8 +18,12 @@ namespace TwitterTest
         {
 
             LoginPage loginPage = new LoginPage();
-            loginPage.GoTo("https://twitter.com/", "js-username-field email-input js-initial-focus");
-            LoginPage.LoginAs(Password.UserNamefb).WithPassword(Password.Passw0rdfb).Login("js-username-field", "js-password-field", "submit","tw");
+           loginPage.GoTo("https://twitter.com/");
+           LoginPage.LoginAs(Usernamepasstw.UserNamefb).WithPassword(Usernamepasstw.Passw0rdfb).Login("tw");
+            // LoginCommand.posttw();
+            //LoginCommand.search();
+            LoginCommand.posttw();
+          //  LoginCommand.logout();
         }
     }
 }

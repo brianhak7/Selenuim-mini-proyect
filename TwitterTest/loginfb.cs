@@ -19,8 +19,8 @@ namespace TwitterTest
         public void TestMethod1()
         {
             LoginPage loginPage = new LoginPage();
-            loginPage.GoTo("https://www.facebook.com/", "inputtext _55r1 inputtext _1kbt inputtext _1kbt");
-            LoginPage.LoginAs(Password.UserNamefb).WithPassword(Password.Passw0rdfb).Login("email","pass", "loginbutton","fb");
+            loginPage.GoTo("https://www.facebook.com/");
+            LoginPage.LoginAs(Usernamepasstw.UserNamefb).WithPassword(Usernamepasstw.Passw0rdfb).Login("fb");
         }
     }
 }
