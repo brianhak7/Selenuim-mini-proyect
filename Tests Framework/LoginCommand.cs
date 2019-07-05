@@ -27,67 +27,68 @@ namespace Tests_Framework
             return this;
         }
 
-       
+        public void Loginfb()
+        {
+            var loginInput = Driver.Instance.FindElement(By.Id("email"));
+            loginInput.SendKeys(userName);
+
+            var passwordInput = Driver.Instance.FindElement(By.Id("pass"));
+            passwordInput.SendKeys(password);
+
+            var loginButton = Driver.Instance.FindElement(By.Id("loginbutton"));
+            loginButton.Click();
+            //var twdelete = Driver.Instance.FindElement(By.ClassName("_1vp5"));
+            //twdelete.Click();
+            //_2s25
+            var Tweet = Driver.Instance.FindElement(By.ClassName("_3ixn"));
+            Tweet.Click();
+
+            //  var Tweet1 = Driver.Instance.FindElement(By.ClassName("_2s25"));
+            // Tweet1.Click();
+            //_2s25 
+            //  Tweet.Click();
+            //_1mf } 
+        }
+
+
 
         public void Login(string site)
         {
-            if (site == "fb")
-            {
-                var loginInput = Driver.Instance.FindElement(By.Id("email"));
-                loginInput.SendKeys(userName);
 
-                var passwordInput = Driver.Instance.FindElement(By.Id("pass"));
-                passwordInput.SendKeys(password);
+            var loginInput = Driver.Instance.FindElement(By.ClassName("js-username-field"));
+            loginInput.SendKeys(userName);
 
-                var loginButton = Driver.Instance.FindElement(By.Id("loginbutton"));
-                loginButton.Click();
-                //var twdelete = Driver.Instance.FindElement(By.ClassName("_1vp5"));
-                //twdelete.Click();
-                //_2s25
-                var Tweet = Driver.Instance.FindElement(By.ClassName("_3ixn"));
-                Tweet.Click();
+            var passwordInput = Driver.Instance.FindElement(By.ClassName("js-password-field"));
+            passwordInput.SendKeys(password);
 
-              //  var Tweet1 = Driver.Instance.FindElement(By.ClassName("_2s25"));
-               // Tweet1.Click();
-                //_2s25 
-              //  Tweet.Click();
-                //_1mf
-            }
-            else {
-                var loginInput = Driver.Instance.FindElement(By.ClassName("js-username-field"));
-                loginInput.SendKeys(userName);
+            var loginButton = Driver.Instance.FindElement(By.TagName("button"));
+            loginButton.Click();
 
-                var passwordInput = Driver.Instance.FindElement(By.ClassName("js-password-field"));
-                passwordInput.SendKeys(password);
+            //  var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(2));
 
-                var loginButton = Driver.Instance.FindElement(By.TagName("button"));
-                loginButton.Click();
+            /*
+            var Tweet = Driver.Instance.FindElement(By.Id("tweet-box-home-timeline"));
+            Tweet.SendKeys("post " + num);
 
-                //  var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(2));
+            var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(2));
 
-                /*
-                var Tweet = Driver.Instance.FindElement(By.Id("tweet-box-home-timeline"));
-                Tweet.SendKeys("post " + num);
+            var twbutton = Driver.Instance.FindElement(By.ClassName("tweet-action"));
+            twbutton.Click();
+            var twdelete = Driver.Instance.FindElement(By.ClassName("ProfileTweet-actionButton"));
+            twdelete.Click();
+            //  var twdelete1 = Driver.Instance.FindElement(By.TagName("Delete Tweet"));
+            //twdelete1.Click();
 
-                var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(2));
+            var twdelete2 = Driver.Instance.FindElement(By.ClassName("ProfileCardStats-statValue"));
+            twdelete2.Click();
+            TimeSpan.FromSeconds(5);
+            var twcomment = Driver.Instance.FindElement(By.CssSelector(".div.br"));
+            twcomment.Click();
 
-                var twbutton = Driver.Instance.FindElement(By.ClassName("tweet-action"));
-                twbutton.Click();
-                var twdelete = Driver.Instance.FindElement(By.ClassName("ProfileTweet-actionButton"));
-                twdelete.Click();
-                //  var twdelete1 = Driver.Instance.FindElement(By.TagName("Delete Tweet"));
-                //twdelete1.Click();
+            TimeSpan.FromSeconds(2);
+         //   var twcomment1 = Driver.Instance.FindElement(By.XPath("//li/div/div[2]/div"));
+            //twcomment1.SendKeys("comment " + num); */
 
-                var twdelete2 = Driver.Instance.FindElement(By.ClassName("ProfileCardStats-statValue"));
-                twdelete2.Click();
-                TimeSpan.FromSeconds(5);
-                var twcomment = Driver.Instance.FindElement(By.CssSelector(".div.br"));
-                twcomment.Click();
-                
-                TimeSpan.FromSeconds(2);
-             //   var twcomment1 = Driver.Instance.FindElement(By.XPath("//li/div/div[2]/div"));
-                //twcomment1.SendKeys("comment " + num); */
-            }
             /*
                       //  var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(2));
 
