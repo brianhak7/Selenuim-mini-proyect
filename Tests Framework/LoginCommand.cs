@@ -153,12 +153,12 @@ namespace Tests_Framework
             comment2.SendKeys("comment " + num);
 
             //button-text replying-text
-            var clickbutton = Driver.Instance.FindElement(By.ClassName("tweet-action"));
+            var clickbutton = Driver.Instance.FindElement(By.CssSelector("div > button.tweet-action.EdgeButton.EdgeButton--primary.js-tweet-btn:nth-child(3)"));
             clickbutton.Click();
 
             //Icon Icon--caretDownLight Icon--smal
-            var commentbutton = Driver.Instance.FindElements(By.ClassName("Icon.Icon--caretDownLight.Icon--small"))[1];
-            commentbutton.Click();
+          //  var commentbutton = Driver.Instance.FindElements(By.ClassName("Icon.Icon--caretDownLight.Icon--small"))[0];
+           // commentbutton.Click();
         }
 
         public static void search() {

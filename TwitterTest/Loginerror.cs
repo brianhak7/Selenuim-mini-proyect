@@ -15,7 +15,7 @@ namespace TwitterTest
         [TestInitialize]
         public void Init()
         {
-            Driver.Initialize();
+            Driver.Initialize("");
 
         }
         

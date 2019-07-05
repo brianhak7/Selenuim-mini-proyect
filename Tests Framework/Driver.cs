@@ -26,12 +26,17 @@ namespace Tests_Framework
 
         }
 
-        public static void Initialize()
+        public static void Initialize(string web)
         {
+            if (web == "Chrome")
+            {
+                Instance = new ChromeDriver();
+                TurnOnWait();
+            }
+            else {
+                Instance = new FirefoxDriver();
 
-            Instance = new ChromeDriver();
-            TurnOnWait();
-
+            }
         }
 
         public static void Close()

@@ -24,3 +24,15 @@ C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\obj\Debug\Tests
 C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\obj\Debug\Tests Framework.csproj.CopyComplete
 C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\obj\Debug\Tests Framework.dll
 C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\obj\Debug\Tests Framework.pdb
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\Tests Framework\bin\Debug\Tests Framework.dll
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\Tests Framework\bin\Debug\Tests Framework.pdb
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\Tests Framework\bin\Debug\nunit.framework.dll
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\Tests Framework\bin\Debug\WebDriver.dll
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\Tests Framework\bin\Debug\WebDriver.Support.dll
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\Tests Framework\bin\Debug\nunit.framework.pdb
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\Tests Framework\bin\Debug\nunit.framework.xml
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\Tests Framework\bin\Debug\WebDriver.xml
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\Tests Framework\bin\Debug\WebDriver.Support.xml
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\Tests Framework\obj\Debug\Tests Framework.csprojResolveAssemblyReference.cache
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\Tests Framework\obj\Debug\Tests Framework.dll
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\Tests Framework\obj\Debug\Tests Framework.pdb
