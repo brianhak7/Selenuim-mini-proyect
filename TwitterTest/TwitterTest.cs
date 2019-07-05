@@ -21,8 +21,8 @@ namespace TwitterTest
            loginPage.GoTo("https://twitter.com/");
            LoginPage.LoginAs("8298430376").WithPassword(Usernamepasstw.Passw0rd).Login("tw");
             // LoginCommand.posttw();
-            //LoginCommand.search();
-            LoginCommand.posttw();
+            LoginCommand.search();
+           // LoginCommand.tendencia();
           //  LoginCommand.logout();
         }
     }

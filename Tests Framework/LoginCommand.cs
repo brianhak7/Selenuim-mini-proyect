@@ -152,7 +152,7 @@ namespace Tests_Framework
             comment2.SendKeys("comment " + num);
 
             //button-text replying-text
-            var clickbutton = Driver.Instance.FindElement(By.XPath("//div[@id='permalink-overlay-body']/div/div/div[2]/div/form/div[3]/div[2]/button/span[2]"));
+            var clickbutton = Driver.Instance.FindElement(By.ClassName("tweet-action"));
             clickbutton.Click();
 
             //Icon Icon--caretDownLight Icon--smal
@@ -164,9 +164,15 @@ namespace Tests_Framework
             //search-input
 
             var Searchb = Driver.Instance.FindElement(By.ClassName("search-input"));
-            Searchb.SendKeys("Keanu Reeves");
+            Searchb.SendKeys("James Woods");
             var Searchpush = Driver.Instance.FindElement(By.CssSelector("button.Icon"));
             Searchpush.Click();
+
+            //AdaptiveRelatedSearches-item
+            TimeSpan.FromSeconds(5);
+            var Seapush = Driver.Instance.FindElement(By.LinkText("      James Woods"));
+            Seapush.Click();
+           
             //visuallyhidden
         }
         public static void logout() {
@@ -178,5 +184,14 @@ namespace Tests_Framework
             Searchpush.Click();
 
         }
-    }
+
+        //trend-item
+        public static void tendencia()
+        {
+            TimeSpan.FromSeconds(5);
+            var push = Driver.Instance.FindElement(By.ClassName("u-linkComplex-target.trend-name"));
+            push.Click();
+            
+        }
+        }
 }

@@ -33,3 +33,6 @@ C:\Users\user\Source\Repos\Selenuim-mini-proyect\TwitterTest\obj\Debug\Tests.csp
 C:\Users\user\Source\Repos\Selenuim-mini-proyect\TwitterTest\obj\Debug\Tests.csproj.CopyComplete
 C:\Users\user\Source\Repos\Selenuim-mini-proyect\TwitterTest\obj\Debug\TwitterTest.dll
 C:\Users\user\Source\Repos\Selenuim-mini-proyect\TwitterTest\obj\Debug\TwitterTest.pdb
+C:\Users\user\source\repos\Selenuim-mini-proyect\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\user\source\repos\Selenuim-mini-proyect\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\user\source\repos\Selenuim-mini-proyect\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
