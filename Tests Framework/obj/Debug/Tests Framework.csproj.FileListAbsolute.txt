@@ -10,3 +10,17 @@ c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Fram
 c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\obj\Debug\Tests Framework.dll
 c:\users\intellisys\documents\visual studio 2017\Projects\TwitterTest\Tests Framework\obj\Debug\Tests Framework.pdb
 C:\Users\Intellisys\Documents\Visual Studio 2017\Projects\TwitterTest\Tests Framework\obj\Debug\Tests Framework.csprojResolveAssemblyReference.cache
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\bin\Debug\Tests Framework.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\bin\Debug\Tests Framework.pdb
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\bin\Debug\nunit.framework.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\bin\Debug\WebDriver.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\bin\Debug\WebDriver.Support.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\bin\Debug\nunit.framework.pdb
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\bin\Debug\nunit.framework.xml
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\bin\Debug\WebDriver.xml
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\bin\Debug\WebDriver.Support.xml
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\obj\Debug\Tests Framework.csprojAssemblyReference.cache
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\obj\Debug\Tests Framework.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\obj\Debug\Tests Framework.csproj.CopyComplete
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\obj\Debug\Tests Framework.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect\Tests Framework\obj\Debug\Tests Framework.pdb

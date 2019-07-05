@@ -19,7 +19,7 @@ namespace TwitterTest
 
             LoginPage loginPage = new LoginPage();
            loginPage.GoTo("https://twitter.com/");
-           LoginPage.LoginAs(Usernamepasstw.UserNamefb).WithPassword(Usernamepasstw.Passw0rdfb).Login("tw");
+           LoginPage.LoginAs("8298430376").WithPassword(Usernamepasstw.Passw0rd).Login("tw");
             // LoginCommand.posttw();
             //LoginCommand.search();
             LoginCommand.posttw();

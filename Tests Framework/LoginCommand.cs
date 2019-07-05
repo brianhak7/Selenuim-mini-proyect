@@ -147,10 +147,17 @@ namespace Tests_Framework
             var comment = Driver.Instance.FindElement(By.CssSelector("span.Icon.Icon--medium.Icon--reply"));
             comment.Click();
 
-             var comment2 = Driver.Instance.FindElement(By.CssSelector("div[name='Test'][checked='checked']"));
+             var comment2 = Driver.Instance.FindElement(By.Id("tweet-box-global"));
             //comment2.Click();
             comment2.SendKeys("comment " + num);
-            
+
+            //button-text replying-text
+            var clickbutton = Driver.Instance.FindElement(By.XPath("//div[@id='permalink-overlay-body']/div/div/div[2]/div/form/div[3]/div[2]/button/span[2]"));
+            clickbutton.Click();
+
+            //Icon Icon--caretDownLight Icon--smal
+            var commentbutton = Driver.Instance.FindElements(By.ClassName("Icon.Icon--caretDownLight.Icon--small"))[1];
+            commentbutton.Click();
         }
 
         public static void search() {
