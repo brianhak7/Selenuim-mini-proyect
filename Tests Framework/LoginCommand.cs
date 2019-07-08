@@ -125,7 +125,7 @@ namespace Tests_Framework
         }
 
 
-        public static void posttw()
+        public static void Posttw()
         {
             Random getrandom = new Random();
         int num = getrandom.Next(0, 5000);
@@ -153,7 +153,7 @@ namespace Tests_Framework
             comment2.SendKeys("comment " + num);
 
             //button-text replying-text
-            var clickbutton = Driver.Instance.FindElement(By.CssSelector("div > button.tweet-action.EdgeButton.EdgeButton--primary.js-tweet-btn:nth-child(3)"));
+            var clickbutton = Driver.Instance.FindElements(By.CssSelector("button.tweet-action.EdgeButton.EdgeButton--primary.js-tweet-btn"))[1];
             clickbutton.Click();
 
             //Icon Icon--caretDownLight Icon--smal

@@ -12,7 +12,7 @@ namespace TwitterTest
         [TestInitialize]
         public void Init()
         {
-            Driver.Initialize("");
+            Driver.Initialize("Chrome");
 
         }
         [TestMethod]
@@ -20,7 +20,7 @@ namespace TwitterTest
         {
             LoginPage loginPage = new LoginPage();
             loginPage.GoTo("https://www.facebook.com/");
-            LoginPage.LoginAs(Usernamepasstw.UserNamefb).WithPassword(Usernamepasstw.Passw0rdfb).Login("fb");
+            LoginPage.LoginAs(Usernamepasstw.UserNamefb).WithPassword(Usernamepasstw.Passw0rdfb).Loginfb();
         }
     }
 }

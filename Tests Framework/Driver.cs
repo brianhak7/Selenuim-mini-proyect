@@ -35,7 +35,7 @@ namespace Tests_Framework
             }
             else {
                 Instance = new FirefoxDriver();
-
+                TurnOnWait();
             }
         }
 

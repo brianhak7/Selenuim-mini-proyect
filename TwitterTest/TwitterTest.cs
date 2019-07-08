@@ -10,7 +10,7 @@ namespace TwitterTest
         [TestInitialize]
         public void Init()
         {
-          Driver.Initialize("");
+          Driver.Initialize("Chrome");
 
         }
         [TestMethod]
@@ -20,7 +20,7 @@ namespace TwitterTest
             LoginPage loginPage = new LoginPage();
            loginPage.GoTo("https://twitter.com/");
            LoginPage.LoginAs("8298430376").WithPassword(Usernamepasstw.Passw0rd).Login("tw");
-            LoginCommand.posttw();
+            LoginCommand.Posttw();
            // LoginCommand.search();
            // LoginCommand.tendencia();
           //  LoginCommand.logout();
