@@ -155,7 +155,7 @@ namespace Tests_Framework
             var clickbutton = Driver.Instance.FindElements(By.CssSelector("button.tweet-action.EdgeButton.EdgeButton--primary.js-tweet-btn"))[1];
             clickbutton.Click();
             var wait1 = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(5));
-           // var twdelete1 = Driver.Instance.FindElement(By.CssSelector("a.u-textInheritColor"));
+           var twdelete1 = Driver.Instance.FindElement(By.CssSelector("a.u-textInheritColor"));
            // twdelete1.Click();
 
             //original-tweet-item last-navigable-stream-item
