@@ -137,13 +137,12 @@ namespace Tests_Framework
 
             var twbutton = Driver.Instance.FindElement(By.ClassName("tweet-action"));
             twbutton.Click();
-            var twdelete = Driver.Instance.FindElement(By.ClassName("ProfileTweet-actionButton"));
-            twdelete.Click();
+           
             //  var twdelete1 = Driver.Instance.FindElement(By.TagName("Delete Tweet"));
             //twdelete1.Click();
 
+
             
-            TimeSpan.FromSeconds(5);
             //span.Icon.Icon--medium.Icon--reply
             var comment = Driver.Instance.FindElement(By.CssSelector("span.Icon.Icon--medium.Icon--reply"));
             comment.Click();
@@ -155,10 +154,14 @@ namespace Tests_Framework
             //button-text replying-text
             var clickbutton = Driver.Instance.FindElements(By.CssSelector("button.tweet-action.EdgeButton.EdgeButton--primary.js-tweet-btn"))[1];
             clickbutton.Click();
+            var wait1 = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(5));
+           // var twdelete1 = Driver.Instance.FindElement(By.CssSelector("a.u-textInheritColor"));
+           // twdelete1.Click();
 
+            //original-tweet-item last-navigable-stream-item
             //Icon Icon--caretDownLight Icon--smal
-          //  var commentbutton = Driver.Instance.FindElements(By.ClassName("Icon.Icon--caretDownLight.Icon--small"))[0];
-           // commentbutton.Click();
+            //  var commentbutton = Driver.Instance.FindElements(By.ClassName("Icon.Icon--caretDownLight.Icon--small"))[0];
+            // commentbutton.Click();
         }
 
         public static void search() {
