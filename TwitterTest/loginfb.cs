@@ -20,7 +20,7 @@ namespace TwitterTest
         {
             LoginPage loginPage = new LoginPage();
             loginPage.GoTo("https://www.facebook.com/");
-            LoginPage.LoginAs(Usernamepasstw.UserNamefb).WithPassword(Usernamepasstw.Passw0rdfb).Loginfb();
+           // LoginPage.LoginAs(Usernamepasstw.UserNamefb).WithPassword(Usernamepasstw.Passw0rdfb).Loginfb();
         }
     }
 }

@@ -28,10 +28,10 @@ namespace Tests_Framework
 
         }
         // js-username-field email-input js-initial-focus
-        public static LoginCommand LoginAs(string userName)
+     /*   public static LoginCommand LoginAs(string userName)
         {
             return new LoginCommand(userName);
-        }
+        } */
     }
 
    

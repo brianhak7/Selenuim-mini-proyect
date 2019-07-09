@@ -16,14 +16,16 @@ namespace TwitterTest
         [TestMethod]
         public void TestMethod1()
         {
-
+            Random getrandom = new Random();
+            int num = getrandom.Next(0, 5000);
             LoginPage loginPage = new LoginPage();
            loginPage.GoTo("https://twitter.com/");
-           LoginPage.LoginAs("8298430376").WithPassword(Usernamepasstw.Passw0rd).Login("tw");
-            LoginCommand.Posttw();
+           LoginCommand.Login(Usernamepasstw.Passw0rd, Usernamepasstw.UserName);
+            LoginCommand.Posttw(num);
+            Assert.AreEqual("","");
            // LoginCommand.search();
            // LoginCommand.tendencia();
-          //  LoginCommand.logout();
+           //  LoginCommand.logout();
         }
     }
 }

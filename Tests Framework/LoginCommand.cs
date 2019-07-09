@@ -52,7 +52,7 @@ namespace Tests_Framework
 
 
 
-        public void Login(string site)
+        public static void Login(string password, string userName)
         {
 
             var loginInput = Driver.Instance.FindElement(By.ClassName("js-username-field"));
@@ -125,43 +125,24 @@ namespace Tests_Framework
         }
 
 
-        public static void Posttw()
+        public static void Posttw(int num)
         {
-            Random getrandom = new Random();
-        int num = getrandom.Next(0, 5000);
+            
 
         var Tweet = Driver.Instance.FindElement(By.Id("tweet-box-home-timeline"));
             Tweet.SendKeys("post " + num);
 
-            var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(2));
+           
 
             var twbutton = Driver.Instance.FindElement(By.ClassName("tweet-action"));
             twbutton.Click();
-           
+
             //  var twdelete1 = Driver.Instance.FindElement(By.TagName("Delete Tweet"));
             //twdelete1.Click();
 
+            Driver.Wait(TimeSpan.FromSeconds(2));
 
-            
-            //span.Icon.Icon--medium.Icon--reply
-            var comment = Driver.Instance.FindElement(By.CssSelector("span.Icon.Icon--medium.Icon--reply"));
-            comment.Click();
-
-             var comment2 = Driver.Instance.FindElement(By.Id("tweet-box-global"));
-            //comment2.Click();
-            comment2.SendKeys("comment " + num);
-
-            //button-text replying-text
-            var clickbutton = Driver.Instance.FindElements(By.CssSelector("button.tweet-action.EdgeButton.EdgeButton--primary.js-tweet-btn"))[1];
-            clickbutton.Click();
-            var wait1 = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(5));
-           var twdelete1 = Driver.Instance.FindElement(By.CssSelector("a.u-textInheritColor"));
-           // twdelete1.Click();
-
-            //original-tweet-item last-navigable-stream-item
-            //Icon Icon--caretDownLight Icon--smal
-            //  var commentbutton = Driver.Instance.FindElements(By.ClassName("Icon.Icon--caretDownLight.Icon--small"))[0];
-            // commentbutton.Click();
+           
         }
 
         public static void search() {
@@ -179,6 +160,52 @@ namespace Tests_Framework
            
             //visuallyhidden
         }
+        public static void Postcomment(int num) {
+            
+            //span.Icon.Icon--medium.Icon--reply
+            var comment = Driver.Instance.FindElement(By.CssSelector("span.Icon.Icon--medium.Icon--reply"));
+            comment.Click();
+
+            var comment2 = Driver.Instance.FindElement(By.Id("tweet-box-global"));
+            //comment2.Click();
+            comment2.SendKeys("comment " + num);
+
+            //button-text replying-text
+            var clickbutton = Driver.Instance.FindElements(By.CssSelector("button.tweet-action.EdgeButton.EdgeButton--primary.js-tweet-btn"))[1];
+            clickbutton.Click();
+
+            
+
+
+
+        }
+
+
+        public static void Deletecommnet() {
+
+            Driver.Wait(TimeSpan.FromSeconds(8));
+            var twdelete = Driver.Instance.FindElement(By.CssSelector("button.new-tweets-bar.js-new-tweets-bar"));
+            twdelete.Click();
+            Driver.Wait(TimeSpan.FromSeconds(1));
+
+
+            var comment1 = Driver.Instance.FindElements(By.CssSelector("button.ProfileTweet-actionButton.u-textUserColorHover.dropdown-toggle.js-dropdown-toggle"))[0];
+            comment1.Click();
+
+            var comment3 = Driver.Instance.FindElements(By.CssSelector("li.js-actionDelete"))[0];
+            comment3.Click();
+
+            Driver.Wait(TimeSpan.FromSeconds(3));
+
+            var comment4 = Driver.Instance.FindElements(By.CssSelector("button.EdgeButton.EdgeButton--danger.delete-action"))[0];
+            comment4.Click();
+            //original-tweet-item last-navigable-stream-item
+            //Icon Icon--caretDownLight Icon--smal
+            //  var commentbutton = Driver.Instance.FindElements(By.ClassName("Icon.Icon--caretDownLight.Icon--small"))[0];
+            // commentbutton.Click();
+
+        }
+
         public static void logout() {
 
             //user-dropdown-toggle
