@@ -59,6 +59,9 @@
     <Compile Include="TwitterTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Loginerror.cs" />
+    <Compile Include="Find_profile.cs" />
+    <Compile Include="UnitTest1.cs" />
+    <Compile Include="PostCommentTW.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -145,14 +145,18 @@ namespace Tests_Framework
            
         }
 
-        public static void search() {
+        public static void Search() {
             //search-input
 
             var Searchb = Driver.Instance.FindElement(By.ClassName("search-input"));
-            Searchb.SendKeys("Joe rogan");
+            Searchb.SendKeys("Donald trump");
             var Searchpush = Driver.Instance.FindElement(By.CssSelector("button.Icon"));
             Searchpush.Click();
 
+            
+        }
+        public static void Go_to_Profile()
+        {
             //AdaptiveRelatedSearches-item
             Driver.Wait(TimeSpan.FromSeconds(5));
             var Seapush = Driver.Instance.FindElements(By.CssSelector("a.ProfileCard-bg.js-nav"))[0];
@@ -162,7 +166,13 @@ namespace Tests_Framework
             tendencia.Click();
             //span.u-linkComplex-target.trend-name
             //visuallyhidden
+
+
+
+
+
         }
+
         public static void Postcomment(int num) {
             
             //span.Icon.Icon--medium.Icon--reply
