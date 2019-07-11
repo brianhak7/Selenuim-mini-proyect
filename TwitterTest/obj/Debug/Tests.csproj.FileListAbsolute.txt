@@ -54,3 +54,23 @@ C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\TwitterTest\bin\Debug\We
 C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\TwitterTest\obj\Debug\Tests.csprojResolveAssemblyReference.cache
 C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\TwitterTest\obj\Debug\TwitterTest.dll
 C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect3\TwitterTest\obj\Debug\TwitterTest.pdb
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\TwitterTest.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\TwitterTest.pdb
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\Tests Framework.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\WebDriver.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\WebDriver.Support.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\Tests Framework.pdb
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\WebDriver.xml
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\WebDriver.Support.xml
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\obj\Debug\Tests.csprojAssemblyReference.cache
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\obj\Debug\Tests.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\obj\Debug\Tests.csproj.CopyComplete
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\obj\Debug\TwitterTest.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\obj\Debug\TwitterTest.pdb
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\user\Source\Repos\Selenuim-mini-proyect2\TwitterTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll

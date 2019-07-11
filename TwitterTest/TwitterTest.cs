@@ -21,9 +21,10 @@ namespace TwitterTest
             LoginPage loginPage = new LoginPage();
            loginPage.GoTo("https://twitter.com/");
            LoginCommand.Login(Usernamepasstw.Passw0rd, Usernamepasstw.UserName);
-            LoginCommand.Posttw(num);
-            Assert.AreEqual("","");
-           // LoginCommand.search();
+           // LoginCommand.Posttw(num);
+           
+
+            LoginCommand.search();
            // LoginCommand.tendencia();
            //  LoginCommand.logout();
         }

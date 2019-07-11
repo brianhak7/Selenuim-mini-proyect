@@ -149,15 +149,18 @@ namespace Tests_Framework
             //search-input
 
             var Searchb = Driver.Instance.FindElement(By.ClassName("search-input"));
-            Searchb.SendKeys("James Woods");
+            Searchb.SendKeys("Joe rogan");
             var Searchpush = Driver.Instance.FindElement(By.CssSelector("button.Icon"));
             Searchpush.Click();
 
             //AdaptiveRelatedSearches-item
-            TimeSpan.FromSeconds(5);
-            var Seapush = Driver.Instance.FindElement(By.LinkText("      James Woods"));
+            Driver.Wait(TimeSpan.FromSeconds(5));
+            var Seapush = Driver.Instance.FindElements(By.CssSelector("a.ProfileCard-bg.js-nav"))[0];
             Seapush.Click();
-           
+
+            var tendencia = Driver.Instance.FindElements(By.CssSelector("span.u-linkComplex-target.trend-name"))[0];
+            tendencia.Click();
+            //span.u-linkComplex-target.trend-name
             //visuallyhidden
         }
         public static void Postcomment(int num) {
