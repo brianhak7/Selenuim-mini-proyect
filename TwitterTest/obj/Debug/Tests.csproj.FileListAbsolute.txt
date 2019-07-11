@@ -92,3 +92,4 @@ C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect4\TwitterTest\bin\Debug\We
 C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect4\TwitterTest\obj\Debug\Tests.csprojResolveAssemblyReference.cache
 C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect4\TwitterTest\obj\Debug\TwitterTest.dll
 C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect4\TwitterTest\obj\Debug\TwitterTest.pdb
+C:\Users\Intellisys\Source\Repos\Selenuim-mini-proyect4\TwitterTest\bin\Debug\TwitterTests.orderedtest

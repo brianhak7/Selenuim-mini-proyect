@@ -24,7 +24,7 @@ namespace TwitterTest
            // LoginCommand.Posttw(num);
            
 
-            LoginCommand.Search();
+           // LoginCommand.Search();
            // LoginCommand.tendencia();
            //  LoginCommand.logout();
         }
