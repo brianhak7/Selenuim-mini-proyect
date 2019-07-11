@@ -11,6 +11,7 @@ using OpenQA.Selenium.Chrome;
 
 namespace Tests_Framework
 {
+    
     public class Driver
     {
         public static IWebDriver Instance { get; set; }
