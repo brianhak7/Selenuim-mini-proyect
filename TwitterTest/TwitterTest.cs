@@ -14,7 +14,7 @@ namespace TwitterTest
 
         }
         [TestMethod]
-        public void LoginTW1()
+        public void TestMethod1()
         {
             Random getrandom = new Random();
             int num = getrandom.Next(0, 5000);
@@ -24,7 +24,7 @@ namespace TwitterTest
            // LoginCommand.Posttw(num);
            
 
-           // LoginCommand.Search();
+            LoginCommand.search();
            // LoginCommand.tendencia();
            //  LoginCommand.logout();
         }
