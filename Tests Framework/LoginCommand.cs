@@ -73,9 +73,10 @@ namespace Tests_Framework
             var Tweet = Driver.Instance.FindElement(By.Id(selector.Postid));
             Tweet.SendKeys("post " + num);
 
-           
 
-            var twbutton = Driver.Instance.FindElement(By.ClassName(selector.TweetAction));
+            Driver.Wait(TimeSpan.FromSeconds(5));
+
+            var twbutton = Driver.Instance.FindElements(By.CssSelector(selector.TweetAction))[0];
             twbutton.Click();
 
             //  var twdelete1 = Driver.Instance.FindElement(By.TagName("Delete Tweet"));
@@ -86,7 +87,7 @@ namespace Tests_Framework
            
         }
 
-        public static void search() {
+        public static void Search() {
             //search-input
 
             var Searchb = Driver.Instance.FindElement(By.ClassName(selector.Search_input));
@@ -105,11 +106,11 @@ namespace Tests_Framework
             //visuallyhidden
         }
         public static void Postcomment(int num) {
-            
+            Driver.Wait(TimeSpan.FromSeconds(8));
             //span.Icon.Icon--medium.Icon--reply
             var comment = Driver.Instance.FindElement(By.CssSelector(selector.Postcomment));
             comment.Click();
-
+            Driver.Wait(TimeSpan.FromSeconds(3));
             var comment2 = Driver.Instance.FindElement(By.Id(selector.Postcomment_sendcomment));
             //comment2.Click();
             comment2.SendKeys("comment " + num);

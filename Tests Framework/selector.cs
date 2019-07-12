@@ -21,7 +21,7 @@ namespace Tests_Framework
         {
 
 
-            get { return "xxxx6666"; }
+            get { return "js-password-field"; }
 
 
 
@@ -67,7 +67,7 @@ namespace Tests_Framework
 
             get
             {
-                return "tweet-action";
+                return "button.tweet-action";
 
 
             }
@@ -112,11 +112,11 @@ namespace Tests_Framework
             }
 
         }
-        
+
 
         public static string Tendencia
 
-        { 
+        {
             get
             {
                 return "a.pretty-link.js-nav.js-tooltip.u-linkComplex";
@@ -131,7 +131,7 @@ namespace Tests_Framework
         {
             get
             {
-                return "a.pretty-link.js-nav.js-tooltip.u-linkComplex";
+                return "p.TweetTextSize.js-tweet-text.tweet-text";
 
 
             }
