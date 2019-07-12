@@ -77,6 +77,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bdd.cs" />
+    <Compile Include="Component1.cs" />
+    <Compile Include="Component1.Designer.cs">
+      <DependentUpon>Component1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Driver.cs" />
     <Compile Include="Logincheck.cs" />
     <Compile Include="LoginCommand.cs" />
