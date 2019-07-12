@@ -59,6 +59,7 @@
     <Compile Include="LoginPage.cs" />
     <Compile Include="Password.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="selector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

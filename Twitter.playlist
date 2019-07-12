@@ -1,1 +1,1 @@
-<Playlist Version="1.0"><Add Test="TwitterTest.FBLogin.TestMethod1" /></Playlist>
+<Playlist Version="1.0"><Add Test="TwitterTest.FBLogin.TestMethod1" /><Add Test="TwitterTest.Find_profile.Find" /><Add Test="TwitterTest.FBLogin.LoginTW" /><Add Test="TwitterTest.Post.Post_Tweet2" /><Add Test="TwitterTest.FBLogin.LoginTW1" /></Playlist>

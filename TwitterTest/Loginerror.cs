@@ -18,10 +18,7 @@ namespace TwitterTest
             Driver.Initialize("");
 
         }
-        
-
-
-
+      
         [TestMethod]
         public void testerror()
         {

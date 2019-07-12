@@ -55,12 +55,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeleteComment.cs" />
     <Compile Include="loginfb.cs" />
+    <Compile Include="Logout.cs" />
+    <Compile Include="Serach.cs" />
     <Compile Include="TwitterTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Loginerror.cs" />
+    <Compile Include="Find_profile.cs" />
+    <Compile Include="Post.cs" />
+    <Compile Include="PostCommentTW.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="TwitterTests.orderedtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
