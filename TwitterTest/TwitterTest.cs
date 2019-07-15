@@ -24,16 +24,14 @@ namespace TwitterTest
            loginPage.GoTo("https://twitter.com/");
            LoginCommand.Login(Usernamepasstw.Passw0rd, Usernamepasstw.UserName);
             // LoginCommand.Posttw(num);
-            // var file = ;
-           // LoginCommand.Search();
-           // Assert.AreEqual(Driver.Instance.Title, "Twitter",false, "Login no fue exitoso");
-         //   LoginCommand.Posttw(num);
+            var file = Driver.Instance.FindElements(By.CssSelector("a.u-textInheritColor.js-nav"))[0].Text;
+         Assert.AreEqual(file , "pila cola",false, "Login no fue exitoso");
+           
             
-
             // Console.Write(Driver.Instance.FindElements(By.CssSelector("a.u-textInheritColor.js-nav"))[0].TagName);
-            // LoginCommand.Search();
-            // LoginCommand.tendencia();
-            //  LoginCommand.logout();
+           // LoginCommand.Search();
+           // LoginCommand.tendencia();
+           //  LoginCommand.logout();
         }
     }
 }
