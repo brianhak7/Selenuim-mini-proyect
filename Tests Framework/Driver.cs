@@ -35,7 +35,7 @@ namespace Tests_Framework
             Instance.Close();
         }
 
-        internal static void Wait(TimeSpan timeSpan)
+       public static void Wait(TimeSpan timeSpan)
         {
             Thread.Sleep((int)(timeSpan.TotalSeconds * 1000));
         }
