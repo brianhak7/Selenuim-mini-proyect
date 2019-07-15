@@ -11,7 +11,9 @@ namespace TwitterTest
         public void TestMethod1()
         {
             LoginPage loginPage = new LoginPage();
+          //  LoginCommand.Login(Pass);
             LoginCommand.Deletecommnet();
+
         }
     }
 }

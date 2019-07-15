@@ -131,7 +131,7 @@ namespace Tests_Framework
         {
             get
             {
-                return "p.TweetTextSize.js-tweet-text.tweet-text";
+                return "span.Icon.Icon--medium.Icon--reply";
 
 
             }

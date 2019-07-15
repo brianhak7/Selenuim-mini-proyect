@@ -87,15 +87,15 @@ namespace Tests_Framework
 
         }
 
-        public static void Search() {
+        public static void Search(String user) {
             //search-input
 
             var Searchb = Driver.Instance.FindElement(By.ClassName(selector.Search_input));
-            Searchb.SendKeys("Donald trump");
+            Searchb.SendKeys(user);
             var Searchpush = Driver.Instance.FindElement(By.CssSelector(selector.button_Icon));
             Searchpush.Click();
 
-
+            Driver.Wait(TimeSpan.FromSeconds(5));
         }
 
 
@@ -129,7 +129,7 @@ namespace Tests_Framework
 
 
         }
-
+        
 
         public static void Deletecommnet() {
 
