@@ -8,6 +8,7 @@ namespace TwitterTest
     public class DeleteComment
     {
         [TestMethod]
+       
         public void TestMethod1()
         {
             LoginPage loginPage = new LoginPage();

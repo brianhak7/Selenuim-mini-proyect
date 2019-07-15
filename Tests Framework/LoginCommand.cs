@@ -101,12 +101,12 @@ namespace Tests_Framework
 
         public static void Go_to_Profile()
         {//AdaptiveRelatedSearches-item
-            Driver.Wait(TimeSpan.FromSeconds(5));
+            Driver.Wait(TimeSpan.FromSeconds(7));
             var Seapush = Driver.Instance.FindElements(By.CssSelector(selector.Go_to_Profile_search))[0];
             Seapush.Click();
 
             var tendencia = Driver.Instance.FindElements(By.CssSelector(selector.Postcomment))[0];
-            tendencia.Click();
+           // tendencia.Click();
         }
             //span.u-linkComplex-target.trend-name
             //visuallyhidden}
