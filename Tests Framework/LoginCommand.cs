@@ -12,7 +12,7 @@ namespace Tests_Framework
 {
     public class LoginCommand
     {
-        public static  Random getrandom = new Random();
+        public static Random getrandom = new Random();
         int num = getrandom.Next(0, 5000);
         private string password;
         private readonly string userName;
@@ -27,12 +27,12 @@ namespace Tests_Framework
             return this;
         }
 
-        public void Loginfb()
+        public void Loginfb(string password, string userName)
         {
-            var loginInput = Driver.Instance.FindElement(By.Id("email"));
+            var loginInput = Driver.Instance.FindElement(By.ClassName(selector.UserNameTW));
             loginInput.SendKeys(userName);
 
-            var passwordInput = Driver.Instance.FindElement(By.Id("pass"));
+            var passwordInput = Driver.Instance.FindElement(By.ClassName(selector.Passw0rdtw));
             passwordInput.SendKeys(password);
 
             var loginButton = Driver.Instance.FindElement(By.Id("loginbutton"));
@@ -68,7 +68,7 @@ namespace Tests_Framework
 
         public static void Posttw(int num)
         {
-            
+
 
             var Tweet = Driver.Instance.FindElement(By.Id(selector.Postid));
             Tweet.SendKeys("post " + num);
@@ -84,7 +84,7 @@ namespace Tests_Framework
 
             Driver.Wait(TimeSpan.FromSeconds(2));
 
-           
+
         }
 
         public static void Search() {
@@ -95,16 +95,21 @@ namespace Tests_Framework
             var Searchpush = Driver.Instance.FindElement(By.CssSelector(selector.button_Icon));
             Searchpush.Click();
 
-            //AdaptiveRelatedSearches-item
+
+        }
+
+
+        public static void Go_to_Profile()
+        {//AdaptiveRelatedSearches-item
             Driver.Wait(TimeSpan.FromSeconds(5));
             var Seapush = Driver.Instance.FindElements(By.CssSelector(selector.Go_to_Profile_search))[0];
             Seapush.Click();
 
             var tendencia = Driver.Instance.FindElements(By.CssSelector(selector.Postcomment))[0];
             tendencia.Click();
-            //span.u-linkComplex-target.trend-name
-            //visuallyhidden
         }
+            //span.u-linkComplex-target.trend-name
+            //visuallyhidden}
         public static void Postcomment(int num) {
             Driver.Wait(TimeSpan.FromSeconds(8));
             //span.Icon.Icon--medium.Icon--reply

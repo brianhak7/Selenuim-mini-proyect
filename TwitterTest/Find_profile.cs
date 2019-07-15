@@ -11,7 +11,7 @@ namespace TwitterTest
         public void Find()
         {
             LoginPage loginPage = new LoginPage();
-         //   LoginCommand.Go_to_Profile();
+         LoginCommand.Go_to_Profile();
         }
     }
 }

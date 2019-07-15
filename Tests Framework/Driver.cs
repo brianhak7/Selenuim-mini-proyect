@@ -16,15 +16,6 @@ namespace Tests_Framework
         public static IWebDriver Instance { get; set; }
 
 
-        public static string BaseAddress
-        {
-
-
-            get { return "https://twitter.com/"; }
-
-
-
-        }
 
         public static void Initialize(string web)
         {
