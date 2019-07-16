@@ -142,7 +142,7 @@ namespace Tests_Framework
         {
             get
             {
-                return "tweet-box-global";
+                return "div.RichEditor-scrollContainer.u-borderRadiusInherit > div.tweet-box.rich-editor.is-showPlaceholder";
 
 
             }
