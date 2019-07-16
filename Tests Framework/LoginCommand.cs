@@ -87,7 +87,8 @@ namespace Tests_Framework
 
         }
 
-        public static void Search(String user) {
+        public static void Search(String user)
+        {
             //search-input
 
             var Searchb = Driver.Instance.FindElement(By.ClassName(selector.Search_input));
@@ -106,32 +107,34 @@ namespace Tests_Framework
             Seapush.Click();
 
             var tendencia = Driver.Instance.FindElements(By.CssSelector(selector.Postcomment))[0];
-           // tendencia.Click();
+            // tendencia.Click();
         }
-            //span.u-linkComplex-target.trend-name
-            //visuallyhidden}
-        public static void Postcomment(int num) {
+        //span.u-linkComplex-target.trend-name
+        //visuallyhidden}
+        public static void Postcomment(string num)
+        {
             Driver.Wait(TimeSpan.FromSeconds(8));
             //span.Icon.Icon--medium.Icon--reply
             var comment = Driver.Instance.FindElement(By.CssSelector(selector.Postcomment));
             comment.Click();
             Driver.Wait(TimeSpan.FromSeconds(3));
-            var comment2 = Driver.Instance.FindElement(By.Id(selector.Postcomment_sendcomment));
+            var comment2 = Driver.Instance.FindElements(By.CssSelector(selector.Postcomment_sendcomment))[1];
             //comment2.Click();
-            comment2.SendKeys("comment " + num);
+            comment2.SendKeys(num);
 
             //button-text replying-text
             var clickbutton = Driver.Instance.FindElements(By.CssSelector(selector.Postcomment_Button))[1];
             clickbutton.Click();
 
-            
+
 
 
 
         }
-        
 
-        public static void Deletecommnet() {
+
+        public static void Deletecommnet()
+        {
 
             Driver.Wait(TimeSpan.FromSeconds(8));
             var twdelete = Driver.Instance.FindElement(By.CssSelector(selector.Delete_Comment_Button));
@@ -141,7 +144,7 @@ namespace Tests_Framework
             var comment1 = Driver.Instance.FindElements(By.CssSelector(selector.Delete_Comment_post))[1];
             comment1.Click();
 
-            var comment3 = Driver.Instance.FindElements(By.CssSelector(selector.Delete_Comment))[0];
+            var comment3 = Driver.Instance.FindElements(By.CssSelector(selector.Delete_Comment))[1];
             comment3.Click();
 
             Driver.Wait(TimeSpan.FromSeconds(3));
@@ -155,7 +158,8 @@ namespace Tests_Framework
 
         }
 
-        public static void logout() {
+        public static void logout()
+        {
             var push = Driver.Instance.FindElement(By.Id(selector.Logout_Dropdown));
             push.Click();
             var Searchpush = Driver.Instance.FindElement(By.CssSelector(selector.Logout_Button));
@@ -169,7 +173,7 @@ namespace Tests_Framework
             TimeSpan.FromSeconds(5);
             var push = Driver.Instance.FindElement(By.ClassName(selector.Trends));
             push.Click();
-            
+
         }
-        }
+    }
 }

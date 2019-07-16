@@ -12,6 +12,7 @@ namespace TwitterTest
         {
             LoginPage loginPage = new LoginPage();
             LoginCommand.logout();
+            Assert.IsTrue(Driver.Instance.Url.Contains("logout"), "LoginOut no fue exitoso");
         }
     }
 }
