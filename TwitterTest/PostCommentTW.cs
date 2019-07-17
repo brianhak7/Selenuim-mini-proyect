@@ -13,7 +13,7 @@ namespace TwitterTest
             Random getrandom = new Random();
             int num = getrandom.Next(0, 5000);
             LoginPage loginPage = new LoginPage();
-            LoginCommand.Postcomment(num);
+            LoginCommand.Postcomment("post "+num);
             
         }
     }

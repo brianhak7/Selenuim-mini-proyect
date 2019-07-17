@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Tests_Framework
 {
-    public class Buscar
+    public class Assert_function
     {//Buscar text de los elementos
+      
         public static bool Search_Comment(String b)
         {
             IList<IWebElement> links = Driver.Instance.FindElements(By.CssSelector("div.content > div.js-tweet-text-container"));
@@ -18,17 +19,24 @@ namespace Tests_Framework
             {
                 if (links[i].Text.Contains(b))
                 {
-
                     return true;
-
-                }
-
-
+                 }
             }
             return false;
         }
 
+        public static bool Buscar_text(string user)
+        {
+            return Driver.Instance.FindElements(By.CssSelector("a.ProfileHeaderCard-nameLink.u-textInheritColor.js-nav"))[0].Text.Contains(user);
+        }
+
+        public static bool Look_for_logout(string user)
+        {
+            return Driver.Instance.Url.Contains(user);
+        }
 
     }
 
+
+    
 }

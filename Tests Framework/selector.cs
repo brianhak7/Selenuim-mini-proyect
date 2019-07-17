@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenQA.Selenium;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Tests_Framework
 {
-    class selector
+  public  class selector
     {
         public static string UserNameTW
         {
@@ -17,6 +18,9 @@ namespace Tests_Framework
 
 
         }
+
+        
+
         public static string Passw0rdtw
         {
 

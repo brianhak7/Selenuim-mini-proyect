@@ -16,11 +16,11 @@ namespace Tests_Framework
 
         [Given(@"I have entered (.*) into the calculator")]
 
-        public void GivenIHaveEnteredIntoTheCalculator(int p0)
+        public void GivenIHaveEnteredIntoTheCalculator(int numbers)
 
         {
 
-           
+            System.Console.WriteLine(numbers);
 
         }
 
@@ -32,7 +32,7 @@ namespace Tests_Framework
 
         {
 
-            ScenarioContext.Current.Pending();
+            System.Console.WriteLine("Pressed Add button");
 
         }
 
@@ -40,14 +40,16 @@ namespace Tests_Framework
 
         [Then(@"the result should be (.*) on the screen")]
 
-        public void ThenTheResultShouldBeOnTheScreen(int p0)
+        public void ThenTheResultShouldBeOnTheScreen(int result)
 
         {
 
-            ScenarioContext.Current.Pending();
-
+            if (result == 120) //Grab object of the value in the real aplication
+                System.Console.WriteLine("The test PASSED");
+            else
+                System.Console.WriteLine("The test Failed");
+        }
         }
 
     }
 
-}

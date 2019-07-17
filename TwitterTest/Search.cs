@@ -19,9 +19,11 @@ namespace TwitterTest
         public void TestMethod1()
         {
             var user = "Lady Gaga";
+            Global_variable.Find_user = user;
             LoginPage loginPage = new LoginPage();
-            LoginCommand.Go_to_Profile();
+            LoginCommand.Search(Global_variable.Find_user);
             Driver.Wait(TimeSpan.FromSeconds(2));
+
             Assert.IsTrue(Driver.Instance.FindElements(By.CssSelector("a.ProfileHeaderCard-nameLink.u-textInheritColor.js-nav"))[0].Text.Contains(user), "Cuenta no encontrado");
 
             //  Driver.Instance.Quit();

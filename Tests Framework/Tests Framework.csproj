@@ -77,8 +77,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bdd.cs" />
-    <Compile Include="Buscar.cs" />
-    <Compile Include="Comment_variable.cs" />
+    <Compile Include="Assert_function.cs" />
+    <Compile Include="Console.cs" />
+    <Compile Include="Global_variable.cs" />
     <Compile Include="Component1.cs" />
     <Compile Include="Component1.Designer.cs">
       <DependentUpon>Component1.cs</DependentUpon>
