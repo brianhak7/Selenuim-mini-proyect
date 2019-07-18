@@ -37,27 +37,21 @@ namespace Tests_Framework
 
             var loginButton = Driver.Instance.FindElement(By.Id("loginbutton"));
             loginButton.Click();
-            //var twdelete = Driver.Instance.FindElement(By.ClassName("_1vp5"));
-            //twdelete.Click();
-            //_2s25
+            
             var Tweet = Driver.Instance.FindElement(By.ClassName("_3ixn"));
             Tweet.Click();
 
-            //  var Tweet1 = Driver.Instance.FindElement(By.ClassName("_2s25"));
-            // Tweet1.Click();
-            //_2s25 
-            //  Tweet.Click();
-            //_1mf } 
+           
         }
 
 
 
         public static void Login(string password, string userName)
         {
-            var loginInput = Driver.Instance.FindElement(By.ClassName(selector.UserNameTW));
+            var loginInput = Driver.Instance.FindElement(By.Id(selector.UserNameFB));
             loginInput.SendKeys(userName);
 
-            var passwordInput = Driver.Instance.FindElement(By.ClassName(selector.Passw0rdtw));
+            var passwordInput = Driver.Instance.FindElement(By.Id(selector.Passw0rdFB));
             passwordInput.SendKeys(password);
 
             var loginButton = Driver.Instance.FindElement(By.TagName(selector.ButtonLogin));
@@ -79,8 +73,6 @@ namespace Tests_Framework
             var twbutton = Driver.Instance.FindElements(By.CssSelector(selector.TweetAction))[0];
             twbutton.Click();
 
-            //  var twdelete1 = Driver.Instance.FindElement(By.TagName("Delete Tweet"));
-            //twdelete1.Click();
 
             Driver.Wait(TimeSpan.FromSeconds(2));
 
@@ -89,7 +81,7 @@ namespace Tests_Framework
 
         public static void Search(String user)
         {
-            //search-input
+            
 
             var Searchb = Driver.Instance.FindElement(By.ClassName(selector.Search_input));
             Searchb.SendKeys(user);
@@ -109,8 +101,7 @@ namespace Tests_Framework
             var tendencia = Driver.Instance.FindElements(By.CssSelector(selector.Postcomment))[0];
             // tendencia.Click();
         }
-        //span.u-linkComplex-target.trend-name
-        //visuallyhidden}
+       
         public static void Postcomment(string num)
         {
             Driver.Wait(TimeSpan.FromSeconds(8));
@@ -151,10 +142,7 @@ namespace Tests_Framework
 
             var comment4 = Driver.Instance.FindElements(By.CssSelector(selector.Delete_Comment_final))[0];
             comment4.Click();
-            //original-tweet-item last-navigable-stream-item
-            //Icon Icon--caretDownLight Icon--smal
-            //  var commentbutton = Driver.Instance.FindElements(By.ClassName("Icon.Icon--caretDownLight.Icon--small"))[0];
-            // commentbutton.Click();
+         
 
         }
 
