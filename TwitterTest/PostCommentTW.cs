@@ -14,7 +14,7 @@ namespace TwitterTest
             int num = getrandom.Next(0, 5000);
             LoginPage loginPage = new LoginPage();
             LoginCommand.Postcomment("post "+num);
-            
+            Assert.IsTrue(Assert_function.Search_Comment("post " + num), "Cuenta no encontrado");
         }
     }
 }

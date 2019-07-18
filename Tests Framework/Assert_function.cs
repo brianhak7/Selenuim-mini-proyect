@@ -10,14 +10,14 @@ namespace Tests_Framework
     public class Assert_function
     {//Buscar text de los elementos
       
-        public static bool Search_Comment(String b)
+        public static bool Search_Comment(String word)
         {
             IList<IWebElement> links = Driver.Instance.FindElements(By.CssSelector("div.content > div.js-tweet-text-container"));
             IList<IWebElement> listOflinks = new List<IWebElement>();
 
             for (int i = 0; i < links.Count; i++)
             {
-                if (links[i].Text.Contains(b))
+                if (links[i].Text.Contains(word))
                 {
                     return true;
                  }

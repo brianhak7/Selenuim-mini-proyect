@@ -24,7 +24,7 @@ namespace TwitterTest
             LoginCommand.Search(Global_variable.Find_user);
             Driver.Wait(TimeSpan.FromSeconds(2));
 
-            Assert.IsTrue(Driver.Instance.FindElements(By.CssSelector("a.ProfileHeaderCard-nameLink.u-textInheritColor.js-nav"))[0].Text.Contains(user), "Cuenta no encontrado");
+            Assert.IsTrue(Assert_function.Buscar_text(user), "Cuenta no encontrado");
 
             //  Driver.Instance.Quit();
         }
