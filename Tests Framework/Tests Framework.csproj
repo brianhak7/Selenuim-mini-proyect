@@ -78,7 +78,6 @@
   <ItemGroup>
     <Compile Include="bdd.cs" />
     <Compile Include="Assert_function.cs" />
-    <Compile Include="Console.cs" />
     <Compile Include="Global_variable.cs" />
     <Compile Include="Component1.cs" />
     <Compile Include="Component1.Designer.cs">

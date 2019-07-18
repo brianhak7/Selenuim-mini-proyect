@@ -54,10 +54,10 @@ namespace Tests_Framework
 
         public static void Login(string password, string userName)
         {
-            var loginInput = Driver.Instance.FindElement(By.ClassName(selector.UserNameTW));
+            var loginInput = Driver.Instance.FindElement(By.Id(selector.UserNameFB));
             loginInput.SendKeys(userName);
 
-            var passwordInput = Driver.Instance.FindElement(By.ClassName(selector.Passw0rdtw));
+            var passwordInput = Driver.Instance.FindElement(By.Id(selector.Passw0rdFB));
             passwordInput.SendKeys(password);
 
             var loginButton = Driver.Instance.FindElement(By.TagName(selector.ButtonLogin));

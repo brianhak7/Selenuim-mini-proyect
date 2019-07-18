@@ -30,6 +30,27 @@ namespace Tests_Framework
 
 
         }
+        public static string UserNameFB
+        {
+
+
+            get { return "email"; }
+
+
+
+        }
+
+
+
+        public static string Passw0rdFB
+        {
+
+
+            get { return "pass"; }
+
+
+
+        }
         public static string ButtonLogin
         {
 

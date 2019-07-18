@@ -21,6 +21,7 @@ namespace TwitterTest
             LoginPage loginPage = new LoginPage();
             loginPage.GoTo("https://www.facebook.com/");
             LoginCommand.Login(Usernamepasstw.Passw0rd, Usernamepasstw.UserName);
+            Assert.AreEqual(Driver.Instance.Title, "Facebook", "Login no fue exitoso");
         }
     }
 }
