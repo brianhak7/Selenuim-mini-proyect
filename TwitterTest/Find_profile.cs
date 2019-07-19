@@ -13,8 +13,9 @@ namespace TwitterTest
         {
             var user = "Lady Gaga";
             LoginPage loginPage = new LoginPage();
-            
-         LoginCommand.Go_to_Profile();
+            Twitter_Login.Login();
+            Assert.AreEqual(Global_variable.tab_title, "Twitter", "Login no fue exitoso");
+            LoginCommand.Go_to_Profile();
          Assert.IsTrue(Assert_function.Buscar_text(user), "Usuario no encontrado");
         }
     }

@@ -21,12 +21,13 @@ namespace TwitterTest
             var user = "Lady Gaga";
             Global_variable.Find_user = user;
             LoginPage loginPage = new LoginPage();
+            Twitter_Login.Login();
             LoginCommand.Search(Global_variable.Find_user);
             Driver.Wait(TimeSpan.FromSeconds(2));
 
             Assert.IsTrue(Assert_function.Buscar_text(user), "Cuenta no encontrado");
 
-            //  Driver.Instance.Quit();
+           
         }
     }
 }

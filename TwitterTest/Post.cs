@@ -20,6 +20,8 @@ namespace TwitterTest
             Random getrandom = new Random();
             int num = getrandom.Next(0, 5000);
             LoginPage loginPage = new LoginPage();
+            Twitter_Login.Login();
+            Assert.AreEqual(Global_variable.tab_title, "Twitter", "Login no fue exitoso");
             LoginCommand.Posttw(num);
             Assert.AreEqual(Global_variable.Find_post, "post " + num, false, "Post no fue exitoso");
         }
