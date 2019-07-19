@@ -79,7 +79,7 @@ namespace Tests_Framework
 
             get
             {
-                return "tweet-box-home-timeline";
+                return "div.notranslate.public-DraftEditor-content";
 
 
             }
@@ -92,7 +92,7 @@ namespace Tests_Framework
 
             get
             {
-                return "button.tweet-action";
+                return "span.css-901oao.css-16my406.r-1qd0xha.r-ad9z0x.r-bcqeeo.r-qvutc0";
 
 
             }
@@ -105,7 +105,7 @@ namespace Tests_Framework
 
             get
             {
-                return "search-input";
+                return "input.r-30o5oe.r-1niwhzg";
 
 
             }
@@ -150,7 +150,20 @@ namespace Tests_Framework
             }
 
         }
+       
 
+        public static string Touch_Post_Box
+
+        {
+            get
+            {
+                return "div.css-901oao.css-bfa6kz.r-1re7ezh.r-1qd0xha.r-a023e6";
+               // "input.r-30o5oe.r-1niwhzg.r-17gur6a.r-1yadl64";
+
+
+            }
+
+        }
         public static string Postcomment
 
         {
@@ -234,7 +247,7 @@ namespace Tests_Framework
         {
             get
             {
-                return "user-dropdown-toggle";
+                return "div.css-1dbjc4n.r-1awozwy.r-sdzlij.r-18u37iz > div.css-1dbjc4n";
 
 
             }
@@ -245,12 +258,29 @@ namespace Tests_Framework
         {
             get
             {
-                return "button.dropdown-link.js-logout-button";
+                return "div.css-901oao.css-bfa6kz.r-hkyrab.r-16y2uox.r-1qd0xha.r-a023e6.r-16dba41.r-ad9z0x.r-bcqeeo.r-qvutc0";
 
 
             }
 
+
+
         }
+        public static string button_logout
+
+        {
+            get
+            {
+                return "div.css-901oao.r-1awozwy.r-jwli3a";
+
+
+            }
+
+
+
+        }
+        //
+
         public static string Trends
 
         {

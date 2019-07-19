@@ -12,7 +12,7 @@ namespace Tests_Framework
       
         public static bool Search_Comment(String word)
         {
-            IList<IWebElement> links = Driver.Instance.FindElements(By.CssSelector("div.content > div.js-tweet-text-container"));
+            IList<IWebElement> links = Driver.Instance.FindElements(By.CssSelector("span.css-901oao.css-16my406.r-1qd0xha.r-ad9z0x.r-bcqeeo.r-qvutc0"));
             IList<IWebElement> listOflinks = new List<IWebElement>();
 
             for (int i = 0; i < links.Count; i++)

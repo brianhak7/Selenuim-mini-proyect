@@ -27,26 +27,23 @@ namespace Tests_Framework
             return this;
         }
 
-        public void Loginfb(string password, string userName)
+        public static void Login(string password, string userName)
         {
             var loginInput = Driver.Instance.FindElement(By.ClassName(selector.UserNameTW));
             loginInput.SendKeys(userName);
 
             var passwordInput = Driver.Instance.FindElement(By.ClassName(selector.Passw0rdtw));
             passwordInput.SendKeys(password);
-
-            var loginButton = Driver.Instance.FindElement(By.Id("loginbutton"));
+            var loginButton = Driver.Instance.FindElement(By.TagName(selector.ButtonLogin));
             loginButton.Click();
-            
-            var Tweet = Driver.Instance.FindElement(By.ClassName("_3ixn"));
-            Tweet.Click();
+           
 
            
         }
 
 
 
-        public static void Login(string password, string userName)
+        public static void Loginfb(string password, string userName)
         {
             var loginInput = Driver.Instance.FindElement(By.Id(selector.UserNameFB));
             loginInput.SendKeys(userName);
@@ -54,7 +51,7 @@ namespace Tests_Framework
             var passwordInput = Driver.Instance.FindElement(By.Id(selector.Passw0rdFB));
             passwordInput.SendKeys(password);
 
-            var loginButton = Driver.Instance.FindElement(By.TagName(selector.ButtonLogin));
+            var loginButton = Driver.Instance.FindElement(By.Id("loginbutton"));
             loginButton.Click();
 
         }
@@ -62,15 +59,17 @@ namespace Tests_Framework
 
         public static void Posttw(int num)
         {
+            var Tweetbox = Driver.Instance.FindElement(By.CssSelector(selector.Touch_Post_Box));
+            Tweetbox.Click();
 
-
-            var Tweet = Driver.Instance.FindElement(By.Id(selector.Postid));
+            Driver.Wait(TimeSpan.FromSeconds(5));
+            var Tweet = Driver.Instance.FindElement(By.CssSelector(selector.Postid));
             Tweet.SendKeys("post " + num);
 
 
             Driver.Wait(TimeSpan.FromSeconds(5));
 
-            var twbutton = Driver.Instance.FindElements(By.CssSelector(selector.TweetAction))[0];
+            var twbutton = Driver.Instance.FindElements(By.CssSelector(selector.TweetAction))[4];
             twbutton.Click();
 
 
@@ -83,7 +82,7 @@ namespace Tests_Framework
         {
             
 
-            var Searchb = Driver.Instance.FindElement(By.ClassName(selector.Search_input));
+            var Searchb = Driver.Instance.FindElements(By.ClassName(selector.Search_input))[0];
             Searchb.SendKeys(user);
             var Searchpush = Driver.Instance.FindElement(By.CssSelector(selector.button_Icon));
             Searchpush.Click();
@@ -93,7 +92,7 @@ namespace Tests_Framework
 
 
         public static void Go_to_Profile()
-        {//AdaptiveRelatedSearches-item
+        {
             Driver.Wait(TimeSpan.FromSeconds(7));
             var Seapush = Driver.Instance.FindElements(By.CssSelector(selector.Go_to_Profile_search))[0];
             Seapush.Click();
@@ -148,10 +147,16 @@ namespace Tests_Framework
 
         public static void logout()
         {
-            var push = Driver.Instance.FindElement(By.Id(selector.Logout_Dropdown));
+            var push = Driver.Instance.FindElements(By.CssSelector(selector.Logout_Dropdown))[7];
             push.Click();
-            var Searchpush = Driver.Instance.FindElement(By.CssSelector(selector.Logout_Button));
+            Driver.Wait(TimeSpan.FromSeconds(3));
+
+            var Searchpush = Driver.Instance.FindElements(By.CssSelector(selector.Logout_Button))[6];
             Searchpush.Click();
+
+          
+            var button_logout = Driver.Instance.FindElements(By.CssSelector(selector.button_logout))[0];
+            button_logout.Click();
 
         }
 

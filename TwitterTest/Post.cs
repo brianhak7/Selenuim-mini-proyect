@@ -9,11 +9,13 @@ namespace TwitterTest
     public class Post
 
     {
+        [TestInitialize]
         public void Init()
         {
             Driver.Initialize("Chrome");
 
         }
+
         [TestMethod]
         public void Post_Tweet2()
         {
@@ -21,9 +23,9 @@ namespace TwitterTest
             int num = getrandom.Next(0, 5000);
             LoginPage loginPage = new LoginPage();
             Twitter_Login.Login();
-            Assert.AreEqual(Global_variable.tab_title, "Twitter", "Login no fue exitoso");
+            Assert.AreEqual(Driver.Instance.Title, "Home / Twitter", "Login no fue exitoso");
             LoginCommand.Posttw(num);
-            Assert.AreEqual(Global_variable.Find_post, "post " + num, false, "Post no fue exitoso");
+            Assert.IsTrue(Assert_function.Search_Comment("post " + num), "Post no fue exitoso");
         }
     }
 }
