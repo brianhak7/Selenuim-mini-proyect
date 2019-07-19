@@ -24,4 +24,6 @@ namespace TwitterTest
             Assert.AreEqual(Driver.Instance.FindElements(By.CssSelector("p.TweetTextSize.js-tweet-text.tweet-text"))[0].Text, "post " + num, false, "Post no fue exitoso");
         }
     }
+
+
 }
