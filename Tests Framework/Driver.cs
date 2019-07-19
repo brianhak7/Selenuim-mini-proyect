@@ -24,6 +24,15 @@ namespace Tests_Framework
                 Instance = new ChromeDriver();
                 TurnOnWait();
             }
+            else if(web == "Headch"){
+ChromeOptions options = new ChromeOptions();
+
+                options.AddArgument ("--headless");
+
+           Instance = new ChromeDriver(options);
+
+                
+            }
             else {
                 Instance = new FirefoxDriver();
                 TurnOnWait();

@@ -2,8 +2,5 @@
 <OrderedTest name="twittertests" storage="c:\users\intellisys\source\repos\selenuim-mini-proyect6\twittertest\twittertests.orderedtest" id="9ff7302e-c4a8-4c66-9518-cfecdd2e0b5c" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <TestLinks>
     <TestLink id="676bc4e6-b258-cf06-5f9b-c732ac4ddbda" name="LoginTW1" storage="bin\debug\twittertest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
-    <TestLink id="d5da3aa1-769b-6be2-2aa7-8a8736a43649" name="Post_Tweet2" storage="bin\debug\twittertest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
-    <TestLink id="d0976cf3-7bd9-16dc-9f34-ccf9f2f217de" name="TestMethod1" storage="bin\debug\twittertest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
-    <TestLink id="a344f6c5-8bba-7913-6222-2412c19516c7" name="TestMethod1" storage="bin\debug\twittertest.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
   </TestLinks>
 </OrderedTest>

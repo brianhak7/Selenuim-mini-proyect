@@ -15,7 +15,7 @@ namespace TwitterTest
             LoginPage loginPage = new LoginPage();
             
          LoginCommand.Go_to_Profile();
-         Assert.IsTrue(Driver.Instance.FindElements(By.CssSelector("a.ProfileHeaderCard-nameLink.u-textInheritColor.js-nav"))[0].Text.Contains(user), "Usuario no encontrado");
+         Assert.IsTrue(Assert_function.Buscar_text(user), "Usuario no encontrado");
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenQA.Selenium;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Tests_Framework
 {
-    class selector
+  public  class selector
     {
         public static string UserNameTW
         {
@@ -17,11 +18,35 @@ namespace Tests_Framework
 
 
         }
+
+        
+
         public static string Passw0rdtw
         {
 
 
             get { return "js-password-field"; }
+
+
+
+        }
+        public static string UserNameFB
+        {
+
+
+            get { return "email"; }
+
+
+
+        }
+
+
+
+        public static string Passw0rdFB
+        {
+
+
+            get { return "pass"; }
 
 
 
