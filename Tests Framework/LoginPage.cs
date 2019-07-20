@@ -16,22 +16,12 @@ namespace Tests_Framework
        
         public void GoTo(string site)
         {
-            // System.setProperty("webdriver.gecko.driver", "D:\\\\ToolsQA\\trunk\\Library\\drivers\\geckodriver.exe");
-            //IWebDriver driver = new FirefoxDriver(@"C:\Users\Intellisys\Documents\Visual Studio 2017\Projects\TwitterTest\packages\WebDriver.GeckoDriver.0.20.1\content\");
-           Driver.Instance.Navigate().GoToUrl(site + "login");
-            /// IWebDriver webDriver = new ChromeDriver();
-            // webDriver.Navigate().GoToUrl("http://twitter.com/login");
-           // Instance.Manage().Timeouts().ImplicitWait.Add(TimeSpan.FromSeconds(5));
-          // var wait = new WebDriverWait(Driver.Instance, TimeSpan.FromSeconds(5));
            
-         //  wait.Until(d => d.SwitchTo().ActiveElement().GetAttribute("class") == Class);
+           Driver.Instance.Navigate().GoToUrl(site + "login");
+           
 
         }
-        // js-username-field email-input js-initial-focus
-     /*   public static LoginCommand LoginAs(string userName)
-        {
-            return new LoginCommand(userName);
-        } */
+    
     }
 
    
