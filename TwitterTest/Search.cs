@@ -18,13 +18,16 @@ namespace TwitterTest
         [TestMethod]
         public void TestMethod1()
         {
-            var user = "Lady Gaga";
+            string user = "Lady Gaga";
+            //Global_variable.Find_user = user;
             LoginPage loginPage = new LoginPage();
-            LoginCommand.Go_to_Profile();
+            Twitter_Login.Login();
+            LoginCommand.Search(user);
             Driver.Wait(TimeSpan.FromSeconds(2));
-            Assert.IsTrue(Driver.Instance.FindElements(By.CssSelector("a.ProfileHeaderCard-nameLink.u-textInheritColor.js-nav"))[0].Text.Contains(user), "Cuenta no encontrado");
 
-            //  Driver.Instance.Quit();
+            Assert.IsTrue(Assert_function.Buscar_text(user), "Cuenta no encontrado");
+
+
         }
     }
 }

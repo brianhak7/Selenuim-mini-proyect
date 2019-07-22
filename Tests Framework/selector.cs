@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenQA.Selenium;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Tests_Framework
 {
-    class selector
+    public class selector
     {
         public static string UserNameTW
         {
@@ -17,11 +18,35 @@ namespace Tests_Framework
 
 
         }
+
+
+
         public static string Passw0rdtw
         {
 
 
             get { return "js-password-field"; }
+
+
+
+        }
+        public static string UserNameFB
+        {
+
+
+            get { return "email"; }
+
+
+
+        }
+
+
+
+        public static string Passw0rdFB
+        {
+
+
+            get { return "pass"; }
 
 
 
@@ -54,7 +79,7 @@ namespace Tests_Framework
 
             get
             {
-                return "tweet-box-home-timeline";
+                return "div.notranslate.public-DraftEditor-content";
 
 
             }
@@ -67,7 +92,7 @@ namespace Tests_Framework
 
             get
             {
-                return "button.tweet-action";
+                return "div.css-18t94o4.css-1dbjc4n.r-urgr8i.r-42olwf.r-sdzlij.r-1phboty.r-rs99b7.r-1w2pmg.r-1n0xq6e.r-1vuscfd.r-1dhvaqw.r-1fneopy.r-o7ynqc.r-6416eg.r-lrvibr";
 
 
             }
@@ -80,7 +105,7 @@ namespace Tests_Framework
 
             get
             {
-                return "search-input";
+                return "input.r-30o5oe.r-1niwhzg";
 
 
             }
@@ -126,6 +151,19 @@ namespace Tests_Framework
 
         }
 
+
+        public static string Touch_Post_Box
+
+        {
+            get
+            {
+                return "div.public-DraftStyleDefault-block.public-DraftStyleDefault-ltr";
+                // "input.r-30o5oe.r-1niwhzg.r-17gur6a.r-1yadl64";
+
+
+            }
+
+        }
         public static string Postcomment
 
         {
@@ -209,7 +247,7 @@ namespace Tests_Framework
         {
             get
             {
-                return "user-dropdown-toggle";
+                return "div.css-1dbjc4n.r-1awozwy.r-sdzlij.r-18u37iz > div.css-1dbjc4n";
 
 
             }
@@ -220,12 +258,29 @@ namespace Tests_Framework
         {
             get
             {
-                return "button.dropdown-link.js-logout-button";
+                return "div.css-901oao.css-bfa6kz.r-hkyrab.r-16y2uox.r-1qd0xha.r-a023e6.r-16dba41.r-ad9z0x.r-bcqeeo.r-qvutc0";
 
 
             }
 
+
+
         }
+        public static string button_logout
+
+        {
+            get
+            {
+                return "div.css-901oao.r-1awozwy.r-jwli3a";
+
+
+            }
+
+
+
+        }
+        //
+
         public static string Trends
 
         {

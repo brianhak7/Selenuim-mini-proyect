@@ -13,9 +13,9 @@ namespace TwitterTest
         {
             var user = "Lady Gaga";
             LoginPage loginPage = new LoginPage();
-            
-         LoginCommand.Go_to_Profile();
-         Assert.IsTrue(Driver.Instance.FindElements(By.CssSelector("a.ProfileHeaderCard-nameLink.u-textInheritColor.js-nav"))[0].Text.Contains(user), "Usuario no encontrado");
+
+            LoginCommand.Go_to_Profile();
+            Assert.IsTrue(Driver.Instance.FindElements(By.CssSelector("a.ProfileHeaderCard-nameLink.u-textInheritColor.js-nav"))[0].Text.Contains(user), "Usuario no encontrado");
         }
     }
 }

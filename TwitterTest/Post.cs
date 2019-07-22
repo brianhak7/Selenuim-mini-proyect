@@ -9,19 +9,23 @@ namespace TwitterTest
     public class Post
 
     {
+        [TestInitialize]
         public void Init()
         {
             Driver.Initialize("Chrome");
 
         }
+
         [TestMethod]
         public void Post_Tweet2()
         {
             Random getrandom = new Random();
             int num = getrandom.Next(0, 5000);
             LoginPage loginPage = new LoginPage();
+            Twitter_Login.Login();
+            Assert.AreEqual(Driver.Instance.Title, "Home / Twitter", "Login no fue exitoso");
             LoginCommand.Posttw(num);
-            Assert.AreEqual(Driver.Instance.FindElements(By.CssSelector("p.TweetTextSize.js-tweet-text.tweet-text"))[0].Text, "post " + num, false, "Post no fue exitoso");
+            Assert.IsTrue(Assert_function.Search_Comment("post " + num), "Post no fue exitoso");
         }
     }
 }
